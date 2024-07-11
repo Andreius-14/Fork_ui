@@ -1,0 +1,42 @@
+-- Interesante - Imagenes
+    gallery-01    [Completo]
+    gallery-02    [Completo]
+    gallery-03    [Completo][3D]
+    gallery-04    [Completo]
+    gallery-05    [Completo]
+
+-- Colapso
+    dropdown-menu-03 [Igual--Menu 04]
+    dropdown-menu-06 [Igual--Menu 04]
+    accordion-03  [Colapso con Js] [Absurdo]
+    accordion-02  (Completo)
+    menu-04       [Completo]
+
+-- Flotante
+    profile-cards-02 [Simple - Card]
+    dropdown-menu-04
+
+=================================================
+    payment-card-01 (Completo)
+    widget-01       (Completo)
+
+    drag-and-drop-01  (Completo)
+
+    form-controls-01 (Completo)
+
+=================================================
+
+DOMPurify.sanitize() // Inserta HTML DOM
+new Sortable()
+
+const swiper = new Swiper("   // SCROOL
+
+[CSS]
+
+/*[Los Hermanos que no estan siendo Tocados]*/
+.card:hover ~ .card {
+  justify-content
+
+[Para Colapsar]
+  max-height: 400px;
+  opacity: 1;

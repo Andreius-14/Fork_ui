@@ -1,4 +1,4 @@
-
+/*[Estandar y Centrado]*/
 :root {
     --background: #3C343D;
     --background-border: #6B626C;
@@ -19,6 +19,7 @@ body {
     background-color: var(--background);
 }
 
+/*[Inicio]*/
 .gallery {
     display: flex;
     background-color: var(--background);
@@ -32,7 +33,7 @@ body {
     height: 10rem;
     background-color: var(--background);
     border-radius: 0.5rem;
-    transition: 1000ms all;
+    transition: 1000ms all;   /*[La Animacion]*/
     transform-origin: center left;
     box-shadow: 0 5px 12px rgba(0, 0, 0, 0.5);
     outline: 1px solid var(--background);
@@ -50,6 +51,7 @@ body {
     transform: scale(1.15);
 }
 
+/*[La Animacion]*/
 @keyframes cardFade {
     from {
         opacity: 0;
@@ -76,8 +78,10 @@ body {
     bottom: 0;
     padding-left: 0.75rem;
     padding-bottom: 0.65rem;
+  /*background-color: red;*/
 }
 
+/*[Los Hermanos que no estan siendo Tocados]*/
 .card:hover ~ .card {
     font-weight: bold;
     cursor: pointer;

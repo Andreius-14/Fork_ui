@@ -80,11 +80,12 @@ let comments = [
     }
 ];
 
+//[ Inserta Logo Usuario - Inicio ]
 const authedUser = document.querySelector('.authed-user');
-
 const authorHTML = DOMPurify.sanitize(`<img class="avatar" src="${loggedUser.src}" alt="${loggedUser.name}">`);
-
 authedUser.innerHTML = authorHTML;
+//[ Inserta Logo Usuario - Fin ]
+
 
 const commentsWrapper = document.querySelector('.discussion__comments');
 
@@ -94,25 +95,16 @@ const createComment = (comment) => {
     //? sanitize comment HTML
     return DOMPurify.sanitize(`<div class="comment">
         <div class="avatar">
-            <img
-                class="avatar"
-                src="${comment.author.src}"
-                alt="${comment.author.name}"
-            >
+            <img class="avatar" src="${comment.author.src}" alt="${comment.author.name}" >
         </div>
         <div class="comment__body">
             <div class="comment__author">
                 ${comment.author.name}
-                <time
-                    datetime="${comment.createdAt}"
-                    class="comment__date"
-                >
+                <time datetime="${comment.createdAt}" class="comment__date" >
                     ${timeSince(newDate)}
                 </time>
             </div>
-            <div class="comment__text">
-                <p>${comment.text}</p>
-            </div>
+            <div class="comment__text"> <p>${comment.text}</p> </div>
         </div>
     </div>`);
 }

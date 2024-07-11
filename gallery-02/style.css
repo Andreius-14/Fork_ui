@@ -1,4 +1,5 @@
 
+/*[ Predeterminado ]*/
 :root {
     --background: #3C343D;
     --background-card: #6B626C;
@@ -17,6 +18,7 @@ body {
     height: 100vh;
 }
 
+/*[ Inicio ]*/
 .gallery {
     display: flex;
     left: calc(50% - 19rem);
@@ -29,21 +31,25 @@ body {
     height: 10rem;
     background: var(--background-card);
     border-radius: 0.5rem;
-    transition: 1s ease-in-out;
+    transition: .2s ease-in-out;
     overflow: hidden;
     box-shadow: 0 5px 12px rgba(0, 0, 0, 0.5);
 }
 
+/*[ Abjunta Las Cartas ][No afectamos al PrimerHijo - Para mantener Centrado]*/
 .card:not(:first-child) {
     margin-left: -3rem;
 }
 
+
+/*[ Elevacion ]*/
 .card:hover {
     transform: translateY(-1rem);
     font-weight: bold;
     cursor: pointer;
 }
 
+/*[ Afecta a las hermanas del Hover ]*/
 .card:hover ~ .card {
     left: 2rem;
 }

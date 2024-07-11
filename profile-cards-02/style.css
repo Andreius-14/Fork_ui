@@ -67,6 +67,8 @@ body {
     line-height: 1.4rem;
 }
 
+/*[Rotacion de Iconos]*/
+
 .social-icons {
     display: flex;
     width: 100%;
@@ -79,6 +81,7 @@ body {
     list-style: none;
 }
 
+/*[Animacion de Icono]*/
 .social-icons li a {
     position: relative;
     display: block;
@@ -95,6 +98,7 @@ body {
     stroke-width: 2px;
 }
 
+/*[Animacion Rotacion]*/
 .social-icons li a:hover svg {
     transition: 1.2s;
     transform: rotateY(360deg);

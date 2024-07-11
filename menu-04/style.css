@@ -20,6 +20,9 @@ body {
   box-sizing: border-box;
 }
 
+/*[Iniciamos]*/
+
+/*[--Contenedor de Todo--]*/
 .accordion-container {
   min-width: 20rem;
   padding: 1rem;
@@ -28,6 +31,7 @@ body {
   background-color: #FCFCFC;
 }
 
+/*[Boton De Despliegue + Hover]*/
 .main-item {
   border-radius: 0.5rem;
   padding: 0.75rem;
@@ -46,6 +50,7 @@ body {
   color: var(--primary-item);
 }
 
+/*[Boton De Despliegue + Hover] [Svg]*/
 .main-item svg {
   stroke: var(--item-non-hover);
   transition: all ease-in-out 0.25s;
@@ -53,10 +58,15 @@ body {
 
 .main-item:hover svg {
   stroke: var(--primary-item);
+  /*background-color: red;*/
 }
 
+
+
+/*[JAVASCRIPT - CLASS]*/
+
 .main-item--open {
-  border-radius: 0.5rem;
+  border-radius: 0.5rem;  /*[redundante]*/
   background-color: var(--background-item);
   transition: all 200ms;
   color: var(--primary-item);
@@ -64,7 +74,7 @@ body {
 
 .main-item--open:hover {
   color: var(--primary-item);
-  border-radius: 0.5rem;
+  border-radius: 0.5rem;  /*[redundante]*/
   background-color: var(--background-item);
 }
 
@@ -72,8 +82,11 @@ body {
   stroke: var(--primary-item);
 }
 
+/*[Oculto y Muestro Lista]*/
+
+/*[All <ul>]*/
 .accordion-container > ul {
-  max-height: 0;
+  max-height: 0;    /*[Por defecto Oculto] [Colapso]*/
   list-style-type: none;
   margin: 0;
   padding-left: 0.875rem;
@@ -82,17 +95,23 @@ body {
   visibility: hidden;
   transition: all ease-in-out 0.2s;
 }
-
+/*[Segundo <ul>]*/
 .main-item--open + ul {
   visibility: visible;
-  max-height: 25rem;
-  padding-left: 1.4re;
-  opacity: 1;
+  max-height: 25rem;  /*[Se Descolapsa]*/
+  padding-left: 1.4rem;
+  opacity: 1;         /*[!Invicible]*/
+  /*[Centrando]*/
   display: flex;
   align-items: center;
   flex-direction: column;
+
+  /*background-color: blue;*/
 }
 
+/*[ESTILOS DE Li]*/
+
+/*[All <ul> -> All <li>]*/
 .accordion-container > ul > li {
   height: 3rem;
   display: flex;
@@ -123,12 +142,15 @@ body {
   width: 100%;
 }
 
+
+/*[ESTILOS ICONOS]*/
 .expand-icon {
   width: 1.5rem;
   height: 1.5rem;
   margin-left: auto;
 }
 
+/* Esto Solo Siver si .main-item--open Existe, Existe Gracias a un TRIGGER */
 .main-item--open > .expand-icon {
   transform: rotate(-90deg);
 }
@@ -152,4 +174,3 @@ li:last-child > .line-vertical {
   height: 0.125rem;
   min-width: 0.75rem;
 }
-

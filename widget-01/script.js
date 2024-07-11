@@ -39,9 +39,8 @@ allLinks.forEach((elem) => {
   });
 });
 
-//    - Guarda Datos en URL -- window.location
 //    Habilitar por defecto a la Primera de la Lista
-
+//    La data se guarda en la URL - <a href="Esta data se envia a la URL" > 
 const currentHash = window.location.hash;  // Optiene Id de URL
 let activeLink = document.querySelector(`.tabs a`); // Selecciona Primer <A>
 

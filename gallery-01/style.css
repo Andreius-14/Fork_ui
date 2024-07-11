@@ -23,6 +23,7 @@ body {
     max-width: 800px;
 }
 
+/*[ El truco esta en el Flex ]*/
 .card {
     position: relative;
     left: 0;
